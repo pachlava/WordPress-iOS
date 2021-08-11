@@ -2,6 +2,10 @@
 
 set -e
 
+set -u
+
+echo "The env variable BUILDKITE has value: $BUILDKITE"
+
 echo "--- :rubygems: Setting up Gems"
 restore_cache "$(hash_file .ruby-version)-$(hash_file Gemfile.lock)"
 gem install bundler

@@ -17,7 +17,9 @@ steps:
   #################
   - label: ":pipeline: Build"
     key: "build"
-    command: ".buildkite/commands/build-for-testing.sh"
+    command: |
+      export BUILDKITE
+      .buildkite/commands/build-for-testing.sh
     env: *common_env
     plugins: *common_plugins
 

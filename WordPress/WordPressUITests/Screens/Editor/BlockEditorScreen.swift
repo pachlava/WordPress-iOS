@@ -21,7 +21,7 @@ class BlockEditorScreen: BaseScreen {
     // Toolbar
     let addBlockButton = XCUIApplication().buttons["add-block-button"] // Uses a testID
     // Paragraph block options
-    let blockOptions = XCUIApplication().buttons["Paragraph block options"]
+    let blockOptions = XCUIApplication().buttons["Open Block Actions Menu"]
     let copyBlock = XCUIApplication().buttons["Copy block"]
     let pasteBlockAfter = XCUIApplication().buttons["Paste block after"]
 
